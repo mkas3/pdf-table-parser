@@ -10,6 +10,10 @@
   "jsnext:main": "dist/index.esm.mjs",
   "source": "src/index.ts",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MKas3/pdf-table-extractor-ts"
+  },
   "keywords": [
     "pdf",
     "table",
