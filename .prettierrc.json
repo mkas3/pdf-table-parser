@@ -1,0 +1,19 @@
+{
+  "endOfLine": "lf",
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "tabWidth": 2,
+  "importOrder": [
+    "<TYPES>",
+    "",
+    "<BUILTIN_MODULES>",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^[./]"
+  ],
+  "importOrderTypeScriptVersion": "5.0.0",
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "trailingComma": "es5",
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"]
+}

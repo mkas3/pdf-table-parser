@@ -1,0 +1,67 @@
+{
+  "name": "pdf-table-extractor-ts",
+  "description": "Fork of @florpor/pdf-table-extractor with types",
+  "version": "1.1.0",
+  "main": "dist/index.d.ts",
+  "module": "dist/index.esm.mjs",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "jsnext:main": "dist/index.esm.mjs",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "pdf",
+    "table",
+    "pdfjs",
+    "types",
+    "pdf-table-extractor"
+  ],
+  "files": [
+    "dist",
+    ".npmrc"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.mjs",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "dev": "tsc --watch",
+    "prettier": "prettier --config .prettierrc.json --write \"**/*.{js,ts}\"",
+    "lint": "eslint **/*.ts"
+  },
+  "author": "mkas3",
+  "license": "ISC",
+  "dependencies": {
+    "pdfjs-dist": "^4.3.136"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^20.14.0",
+    "@types/pdfjs-dist": "^2.10.378",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.3.0",
+    "rollup": "^4.18.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-ignore": "^1.0.10",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
