@@ -1,29 +1,31 @@
-# pdf-table-extractor-ts
+# 🐸 PDF Table Parser
 
-Extract tables from PDF
+Simplified parsing of tables from PDF
 
-This package is based on [florpor's pdf-table-extractor](https://github.com/florpor/pdf-table-extractor) with types.
+## ❔ Why?
 
-## Install
+**PDF Table Parser** is a library based on [florpor's pdf-table-extractor](https://github.com/florpor/pdf-table-extractor) with **built-in types**. I couldn't find any ready-made library for parsing tables from pdf, so I rewrote the source code of the library to modern **TypeScript**, output all types and slightly changed it.
+
+## 🚀 Install
 
 ### Using npm
 ```bash
-$ npm install --save pdf-table-extractor-ts
+npm install --save @mkas3/pdf-table-parser
 ```
 
 ### Using yarn
 ```bash
-$ yarn add pdf-table-extractor-ts
+yarn add @mkas3/pdf-table-parser
 ```
 
 ### Using pnpm
 ```bash
-$ pnpm add pdf-table-extractor-ts
+pnpm add @mkas3/pdf-table-parser
 ```
 
 Once the package is installed, you can import the library using import or require approach:
 ```ts
-import extractPdfTable from 'pdf-table-extractor-ts';
+import { extractPdfTable } from '@mkas3/pdf-table-parser';
 ```
 
 ## Example

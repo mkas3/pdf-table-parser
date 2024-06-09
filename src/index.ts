@@ -1,1 +1,1 @@
-export * from './pdf-table-extractor';
+export * from './pdf-table-parser';
